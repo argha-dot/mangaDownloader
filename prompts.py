@@ -40,6 +40,22 @@ def prompts():
             'name': 'manga_name',
             'message': 'Name of the Manga: '
         },
+        {
+            'type': 'list',
+            'name': 'point_five',
+            'message': 'Point Fives exist? ',
+            'choices': [
+                {
+                    'value': '1',
+                    'name': 'Yes'
+                },
+                {
+                    'value': '0',
+                    'name': 'No'
+                },
+            ],
+            'default': 'manga4life'
+        },
     ]
 
     answers = prompt(questions)
